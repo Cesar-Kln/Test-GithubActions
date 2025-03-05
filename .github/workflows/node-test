@@ -3,7 +3,7 @@ name: Node-test
 
 # Le Workflow se lance après quel action github
 on:
-  pull:
+  push:
     branches: [ "main" ]
 
 # Une exécution de workflow est composée d'une ou plusieurs tâches qui peuvent s'exécuter de manière séquentielle ou en parallèle

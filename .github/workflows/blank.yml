@@ -10,6 +10,9 @@ on:
 jobs:
   # Ce jobs contient une seule tâche appelée « build »
   build:
+    # Permet de mettre une condition, par exemple ici se lance uniquement si le dernier commit contient le mot "deploy"
+    #if: contains(github.event.head_commit.message, 'deploy')
+    
     # Le type de runner sur lequel le travail s'exécutera (chez github ou chez vous)
     runs-on: ubuntu-latest
 

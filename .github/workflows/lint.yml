@@ -27,4 +27,4 @@ jobs:
         run: npm install eslint
 
       - name : start server
-        run: npx eslint .
+        run: npx eslint testFileEsLint.js

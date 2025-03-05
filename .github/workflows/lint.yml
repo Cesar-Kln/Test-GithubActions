@@ -10,11 +10,13 @@ on:
 jobs:
   # Ce jobs contient une seule tâche appelée « build »
   build-node:
+    if: contains(github.event.head_commit.message, '[deploy]')
     # Le type de runner sur lequel le travail s'exécutera (chez github ou chez vous)
     runs-on: ubuntu-latest
 
     # Les étapes représentent une séquence de tâches qui seront exécutées dans le cadre du travail
     steps:
+
       # On peut utiliser d'autre actions dans des actions
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

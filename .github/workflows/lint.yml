@@ -10,7 +10,7 @@ on:
 jobs:
   # Ce jobs contient une seule tâche appelée « build »
   build-node:
-    if: contains(github.event.head_commit.message, '[deploy]')
+    if: contains(github.event.head_commit.message, 'deploy')
     # Le type de runner sur lequel le travail s'exécutera (chez github ou chez vous)
     runs-on: ubuntu-latest
 

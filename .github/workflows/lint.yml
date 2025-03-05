@@ -16,6 +16,7 @@ jobs:
     # Les étapes représentent une séquence de tâches qui seront exécutées dans le cadre du travail
     steps:
       # On peut utiliser d'autre actions dans des actions
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
 
       # Exécute une commande à l'aide du shell des runners

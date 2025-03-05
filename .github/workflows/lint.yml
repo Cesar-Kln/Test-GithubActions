@@ -27,7 +27,7 @@ jobs:
         run: npm install eslint
 
       - name: Configure ESLint
-        run: npm init @eslint/config@latest
+        run: npm init @eslint/config@latest -- --config eslint-config-standard
 
       - name : check code
         run: npx eslint .

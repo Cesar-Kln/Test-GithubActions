@@ -20,7 +20,7 @@ jobs:
 
       # Exécute une commande à l'aide du shell des runners
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name : start server
         run: npm test

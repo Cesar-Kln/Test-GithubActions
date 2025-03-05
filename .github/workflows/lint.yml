@@ -19,8 +19,11 @@ jobs:
       - uses: actions/setup-node@v4
 
       # Exécute une commande à l'aide du shell des runners
-      - name: Install dependencies
-        run: npm init @eslint/config@latest && npm install
+      - name: Generate package.json
+        run: npm init -y
+      
+      - name: Install ESLint
+        run: npm install eslint
 
       - name : start server
-        run: npm run lint
+        run: npx eslint .

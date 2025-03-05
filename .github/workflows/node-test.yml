@@ -19,6 +19,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
 
+      - name: see folder structure
+        run: ls -la
+
       # Exécute une commande à l'aide du shell des runners
       - name: Install dependencies
         run: npm ci
